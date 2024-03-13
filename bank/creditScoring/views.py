@@ -1,10 +1,15 @@
 from django.shortcuts import render
-
-# Create your views here.
 from django.http import HttpResponse
+from .tree_test import predict
+
+
+
+
 
 def hello(request):
-    return HttpResponse("Hello, World!")
-
+      result   =    predict(1.0 ,    1.58 ,    548.00 ,   84.00 ,    600.00)
+      context   =  {
+        'result'  :    result}
+      return render(request ,    'home.html'   ,  context   )
 
 
