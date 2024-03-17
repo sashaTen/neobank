@@ -23,9 +23,17 @@ def hello(request):
 
 
 def  result(request):
-      result   =    predict(0.1 ,    1.58 ,    548.00 ,   84.00 ,    600.00)
-      context   =  {
+  policy = request.POST['policy']
+  rate   = request.POST['rate']
+  installment   =    request.POST['installment']
+  dti  =    request.POST['dti']
+  fico  =   request.POST['fico']
+  result   =    predict(policy ,  dti , installment ,   fico ,   rate)
+  context   =  {
         'result'  :    result}
      
-      return render(request ,    'result.html'  ,  context  )
       
+     
+     
+  return render(request ,    'result.html'  , context ) # context  )
+      # python manage.py runserver 

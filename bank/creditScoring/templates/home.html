@@ -7,5 +7,24 @@
 </head>
 <body>
     this is prediction    {{result}}
+    <form action="{% url 'result' %}" method="post">
+        {% csrf_token %}
+        <label for="policy">Credit Policy:</label>
+        <input type="number" step="0.01" id="policy" name="policy" required><br><br>
+
+        <label for="rate">Interest Rate:</label>
+        <input type="number" step="0.01" id="rate" name="rate" required><br><br>
+
+        <label for="installment">Installment Amount:</label>
+        <input type="number" step="0.01" id="installment" name="installment" required><br><br>
+
+        <label for="dti">Debt-to-Income Ratio:</label>
+        <input type="number" step="0.01" id="dti" name="dti" required><br><br>
+
+        <label for="fico">FICO Score:</label>
+        <input type="number" step="1" id="fico" name="fico" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>    <!---->
 </body>
 </html>
