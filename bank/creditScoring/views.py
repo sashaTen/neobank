@@ -37,3 +37,7 @@ def  result(request):
      
   return render(request ,    'result.html'  , context ) # context  )
       # python manage.py runserver 
+
+
+
+#  https://www.youtube.com/watch?v=M_yKXx7xEW4     
