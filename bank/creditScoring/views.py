@@ -41,3 +41,8 @@ def  result(request):
 
 
 #  https://www.youtube.com/watch?v=M_yKXx7xEW4     
+#   the  submit  btn    calls   result   url  which  
+# then    calls the   result   function  in   views  
+#  which    get the  data  and  then   gets   POST  data  
+#  then    uses     ml    model  which  is  saved  in    tree_model 
+#   then   gives  the  prediction  
