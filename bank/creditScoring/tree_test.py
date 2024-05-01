@@ -68,5 +68,7 @@ your rivals
 your indusry 
 major general best. 
 * always seek feedbacks and networking is key. 
-* постоянное саморазвитие, 
+* постоянное саморазвитие: 
+   -> analyse your  day 
+   ->what you dit and what can be improved
 '''
