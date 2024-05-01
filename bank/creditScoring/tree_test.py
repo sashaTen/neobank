@@ -45,30 +45,3 @@ def predict(policy, rate, installment, dti, fico):
         return None
 
 
-
-'''
-build ml model into app -> 
-      ->mlops and ml system-
-           ->api book and clean code
-               -> add new features  
-                   -> new features 
-                         -> inspiration from other fintechs
-                             -> be your  specialization 
-                                   the ai for insurance and lending and  banking
-                                 -> learn economics/finance/bank-management principles
--> / how other's found differentiation by reading and then think about 
-    /problems thinking about proccess  
-    /ai-data value research/
--> read be your  specialization the ai for insurance and lending and  banking
-always think how to  make proccess of  insurance and lending and  banking better?
-                     -faster/cheapier/productive/ ai values to it.  
--> read  ai    research  top  papers  and  news and  articles a lot. 
-you need 3 levels: 
-your rivals 
-your indusry 
-major general best. 
-* always seek feedbacks and networking is key. 
-* постоянное саморазвитие: 
-   -> analyse your  day 
-   ->what you dit and what can be improved
-'''
