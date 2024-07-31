@@ -1,0 +1,27 @@
+1 managing databases, routing URLs, handling user input through forms, and managing user authentication.
+2 Django Components
+
+MVT Architecture: Models for data, Views for business logic, Templates for presentation.
+URLconf: Connects URLs to Views.
+Admin Interface: Provides an auto-generated admin panel.
+Middleware: Functions for request/response processing.
+Settings & Static Files: Configurations and asset management.
+Security & Testing: Built-in tools for security and quality assurance.
+Let me know if you need any more details or a deeper explanation on any specific component
+
+3 web development concepts, proficiency in Django framework including models, views, templates, and forms,
+ familiarity with databases and SQL, and knowledge of version control systems like Git.
+
+4 Model-View-Controller (MVC) pattern
+Model − The lowest level of the pattern which is responsible for maintaining data.
+
+View − This is responsible for displaying all or a portion of the data to the user.
+
+Controller − Software Code that controls the interactions between the Model and View
+
+user => uls =>  view => models/templates...
+
+
+5..so  later   go  for  this   : 
+https://www.tutorialspoint.com/django/django_apps_life_cycle.htm
+  and  then   apply   one   by  one   the   concepts 
