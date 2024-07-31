@@ -25,3 +25,6 @@ user => uls =>  view => models/templates...
 5..so  later   go  for  this   : 
 https://www.tutorialspoint.com/django/django_apps_life_cycle.htm
   and  then   apply   one   by  one   the   concepts 
+
+...https://stockanalysis.com/  .. this is  very  good   site as   the  example  
+compare it to   yahoo  finance   and the n   maybe   you   ll have  ideas . also do it yourself .
