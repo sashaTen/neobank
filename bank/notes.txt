@@ -174,3 +174,17 @@ MLOps: MLflow, DVC, Docker, TensorFlow Serving.
 Web Development: Django, Django REST Framework, React/Vue.js.
 CI/CD: GitHub Actions, Jenkins, GitLab CI.
 Monitoring: Prometheus, Grafana, New Relic.
+
+
+
+Version control − This involves tracking changes to code, data, and models using tools like Git to ensure reproducibility and maintain a history of all changes.
+
+Continuous integration and delivery (CI/CD) − This involves automating the process of building, testing, and deploying machine learning models using tools like Jenkins, Travis CI, or CircleCI.
+
+Containerization − This involves packaging machine learning models and dependencies into containers using tools like Docker or Kubernetes, which enables easy deployment and scaling of models in production environments.
+
+Model serving − This involves setting up a server to host machine learning models and serving predictions on incoming data.
+
+Monitoring and logging − This involves tracking the performance of machine learning models in production environments using tools like Prometheus or Grafana, and logging errors and alerts to enable proactive maintenance.
+
+Automated testing − This involves automating the testing of machine learning models to ensure they are accurate and robust.
