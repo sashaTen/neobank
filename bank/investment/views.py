@@ -1,8 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
-def welcome(request):
-    return render(request ,  'welcome.html')
+def welcome(request , company_id):
+    top_stocks = ['apple' ,  'microsoft' ,  'google']
+     
+    return render(request, 'welcome.html', {'company_name': top_stocks[company_id] })
+
+
+   
 
 
 

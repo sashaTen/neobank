@@ -1,0 +1,9 @@
+1 startapp
+2 regsiter  in settings 
+3 include URLs
+4 urls and views connection
+5 pass data via urls
+6 in view = { 'var_for_template' : value } in templeate :  {{'var_for_template'}}
+7 you can use 'if'  in the templates 
+8 you can create  master base template 
+
