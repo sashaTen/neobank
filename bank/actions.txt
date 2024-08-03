@@ -6,4 +6,26 @@
 6 in view = { 'var_for_template' : value } in templeate :  {{'var_for_template'}}
 7 you can use 'if'  in the templates 
 8 you can create  master base template 
+9 administration  in  django depends on  middleware and controls installed  apps 
+10 create  super user  python manage.py createsuperuser 
+11 https://medium.com/scalereal/everything-you-need-to-know-about-middleware-in-django-2a3bd3853cd6 
 
+
+
+
+\\\\\
+
+Project plan
+1... finish tutorials point django 
+2... stock prediction model time series
+You enter stock and desired time and get predictions of desired period.  and metrics on test
+3... opensource mlops 
+4... implement what you need from 
+Books about mlops.
+5... SE for datascience book.
+6... master API book for django chapter.
+7... keep researching and improving by 
+Предсказания именно определенной индустрий.  Например альтернативы энергии сектор и лучшие рекомендации акции.
+Ты не можешь охватить все но фокус
+Также важно знать акции самому. 
+Анализировать и также интересоваться и также знать систему. И другие сток конкурентов по аналитики

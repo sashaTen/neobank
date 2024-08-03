@@ -23,7 +23,7 @@ user => uls =>  view => models/templates...
 
 
 5..so  later   go  for  this   : 
-https://www.tutorialspoint.com/django/django_admin_interface.htm
+https://www.tutorialspoint.com/django/django_admin_create_user.htm
 
   and  then   apply   one   by  one   the   concepts 
 
