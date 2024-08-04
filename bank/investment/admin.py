@@ -1,6 +1,6 @@
 from django.contrib import admin
-from  .models import Inverstor
+from  .models import Investor
    
 
 
-admin.site.register(Inverstor)
+admin.site.register(Investor)

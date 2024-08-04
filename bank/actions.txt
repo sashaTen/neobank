@@ -16,7 +16,13 @@
 16 __str__() method  for model representation. 
 17 the admin  panel has  a lot of features like sharing user access  and  also the way you can display info
 18   the models exist for database tasks and  operations and the admin is  interface for the CRUD  management of data . 
-
+19  how to  allow people   register  as   investors ? 
+a.... create model and model forms with fields and model
+b.... create view. url wakes up the view which renders the template 
+c.... view   loks  like : form = InvestorForm() return render(request, 'create_user.html', {'form': form})
+and it renders page but if method is post it saves model from post input.
+it renders the page until gets  post. then it redirects to success page .   
+ 
 
 \\\\\
 
