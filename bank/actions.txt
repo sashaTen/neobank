@@ -9,8 +9,13 @@
 9 administration  in  django depends on  middleware and controls installed  apps 
 10 create  super user  python manage.py createsuperuser 
 11 https://medium.com/scalereal/everything-you-need-to-know-about-middleware-in-django-2a3bd3853cd6 
-
-
+12 you have  groups and  users in admin 
+13 you creathe the models with models features in models.py 
+14 run these python manage.py makemigrations myapp python manage.py migrate
+15 admin.register()  in admin.py
+16 __str__() method  for model representation. 
+17 the admin  panel has  a lot of features like sharing user access  and  also the way you can display info
+18   the models exist for database tasks and  operations and the admin is  interface for the CRUD  management of data . 
 
 
 \\\\\
