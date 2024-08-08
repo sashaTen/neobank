@@ -1,6 +1,7 @@
 from django.shortcuts import render , redirect
 from django.http import HttpResponse
 from .forms   import  InvestorForm
+from .models import Investor
 # Create your views here.
 def welcome(request , company_id):
     top_stocks = ['apple' ,  'microsoft' ,  'google']
@@ -26,3 +27,11 @@ def aboutUs(request):
     return  render(request  ,  'about.html')
 
 
+def see_investors(request):
+     objects = Investor.objects.all()
+     res ='Printing all Dreamreal entries in the DB : <br>'
+   
+     for elt in objects:
+       res += elt.name+"<br>"
+    
+     return HttpResponse(res)

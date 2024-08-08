@@ -165,6 +165,7 @@
             <h1>Welcome to Stock Analysis</h1>
             <a href="{% url 'create_user' %}">register</a> 
             <p>Your gateway to insightful market data and analysis</p>
+            <a href="{% url 'see_investors' %}">see investors</a> 
         </div>
     </header>
 
@@ -196,6 +197,7 @@
             </div>
             <div class="chart">
                 <h4>Stock Performance</h4>
+                
                 <canvas id="performanceChart"></canvas>
             </div>
         </div>

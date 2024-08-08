@@ -22,7 +22,20 @@ b.... create view. url wakes up the view which renders the template
 c.... view   loks  like : form = InvestorForm() return render(request, 'create_user.html', {'form': form})
 and it renders page but if method is post it saves model from post input.
 it renders the page until gets  post. then it redirects to success page .   
- 
+20 how to see objects? you import model to views and there approach your model like 
+objects =  your_model.objects.all()  and then filter and iterate  like object.name(other field) in objects from model. 
+21 specific = your_model.objects.get(name = " name of object you look for")
+22 sorex = Dreamreal.objects.get(name = "sorex")
+23 update is very similar to create. you fill the form again and then your_updated_object.save()
+24 dr1 = Dreamreal()
+>>> dr1.website = 'company1.com'
+>>> dr1.name = 'company1'
+>>> dr1.mail = 'contact@company1'
+>>> dr1.phonenumber = '12345'
+>>> dr1.save()    in django   the   objects in model which are rows act like objects and the fields act like values
+25 so   you can get info via post with object and  just objecit.fileld = data .  object.save() thats it. 
+
+
 
 \\\\\
 
