@@ -1,0 +1,10 @@
+The back end is made up of the server, a database, and a back end application (as well as some APIs).
+on the high level the database  is tables related to each other. 
+api's help you with CRUD ops of db's 
+databse design  : 
+tables and relationships 
+https://dev.to/louaiboumediene/mastering-relational-database-design-a-comprehensive-guide-3jh8
+
+https://javascript.plainenglish.io/essential-database-concepts-for-backend-development-from-design-to-development-4474a46d426b
+
+learn from those two .. larn concepts and ask  jpt to adapt to mini practice. 
