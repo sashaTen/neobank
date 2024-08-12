@@ -1,0 +1,36 @@
+First of all you  dont have to learn  every single topic in mlops. Only basics.
+
+Theory  behind : 
+1 Data and model 
+2 feature management and storage 
+3 pipeline automation 
+4 CI/ CD 
+5  monitoring 
+….
+Those steps  are   universal  and   you   choose the tools  for each step. 
+
+Store  -> train -> commit -> test -> deploy & monitor -> train 
+So   you   can  try   simple project in  datacamp on  mlops for  having the hands  on   
+And then try to implement to your case   which is  simple lstm for the stock prediction .    
+
+Key  features  : 
+Experiment tracking 
+Storage 
+Flexibility to retrain 
+
+
+Basically   the   big   picture  of  project  looks  like   : 
+Model training 
+Deployment of api of  django 
+Monitoring and logging 
+CI  / CD   
+
+Tools : 
+Django 
+Sklearn / keras or  any 
+Docker
+Github actions 
+Mlflow 
+Grafana 
+Maybe ZenMl
+Mloops   is   way too big   so   that is why  just  build project above and then improve on  top of it using  the books  and try to see the big  picture and use proper tools because tools are just tools .   And tools  must be used properly. 

@@ -44,9 +44,7 @@ Project plan
 2... stock prediction model time series
 You enter stock and desired time and get predictions of desired period.  and metrics on test
 3... opensource mlops 
-4... implement what you need from 
-Books about mlops.
-5... SE for datascience book.
+4... SE for datascience book.
 6... master API book for django chapter.
 7... keep researching and improving by 
 Предсказания именно определенной индустрий.  Например альтернативы энергии сектор и лучшие рекомендации акции.

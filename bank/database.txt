@@ -8,3 +8,26 @@ https://dev.to/louaiboumediene/mastering-relational-database-design-a-comprehens
 https://javascript.plainenglish.io/essential-database-concepts-for-backend-development-from-design-to-development-4474a46d426b
 
 learn from those two .. larn concepts and ask  jpt to adapt to mini practice. 
+...
+the database design example  is when you  build the conncetions 
+like the sale has time , id of products in sale and the products also have the 
+id's of who inveneted maybe region of development . employee may have the department id in it .  
+the relationships vary from one to  one like account and profile as well one to many 
+like one sale may have many products in it and many to many like 
+items and clients.
+...
+integrities are important like refer must be valid and primary key has to  be  unique and no null
+...
+primary key is id of row
+....
+one to many : 
+   primary key 
+   no  references 
+parent table :()
+   child table: foreign key (...) references (primary key of parent)
+
+
+
+many to  many   : 
+you create  association   table like 
+transaction which has  both id's of two tables.   
