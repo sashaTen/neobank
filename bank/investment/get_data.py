@@ -4,13 +4,14 @@ import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 from keras.models import Sequential
 from keras.layers import LSTM, Dropout, Dense
-
+import matplotlib.pyplot as plt
 
 # data = yf.download("AAPL", start="2020-01-01", end="2021-01-01")
 def forecast(tickle , start , end , window ,  days_to_forecast):
     data = yf.download(tickle, start=start, end=end)
-    predictions =  lstm_model(data['Close'].values , window ,  days_to_forecast)
-    return predictions
+    predictions , y_test =  lstm_model(data['Close'].values , window ,  days_to_forecast)
+ 
+    return predictions ,  y_test
      
 
 
@@ -52,8 +53,14 @@ def lstm_model(price_data, sequence_length,days_to_forecast, epochs=25, batch_si
     # Train the model
     model.fit(x_train, y_train, epochs=epochs, batch_size=batch_size, verbose=0)
     predictions = model.predict(x_test)
-    return  predictions
+    return  predictions, y_test
 
 
 #predictions =  lstm_model(data['Close'].values , 30 ,  3)
 #predictions  = forecast("AAPL", "2020-01-01", "2021-01-01" , 40  , 3)
+
+
+
+
+
+#predictions =  forecast("AAPL", "2020-01-01", "2021-01-01", 40, 3)

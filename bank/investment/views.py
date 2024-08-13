@@ -1,4 +1,7 @@
 from django.shortcuts import render , redirect
+import matplotlib.pyplot as plt
+import io
+import urllib, base64
 from django.http import HttpResponse ,JsonResponse
 from .forms   import  InvestorForm
 from .models import Investor
@@ -40,14 +43,33 @@ def see_investors(request):
 
 def see_predictions(request):
     '''
-    predictions = forecast("AAPL", "2020-01-01", "2021-01-01", 40, 3)
+     predictions  , y_test= forecast("AAPL", "2020-01-01", "2021-01-01", 40, 3)
     
-    # Convert NumPy array to a list
-    predictions_list = predictions.tolist()
     
-    # Return as JSON response
-    return JsonResponse({'predictions': predictions_list})
     
-    '''
+    
+    plt.figure(figsize=(7, 5))  # Adjust figure size as needed
+    plt.plot( y_test, label='Actual Data')
+    plt.plot(predictions, label='LSTM Predicted Data ')
+
+    plt.xlabel('Time Step')
+    plt.ylabel('Price')
+    plt.title('Actual vs. Predicted Stock Prices   ' )
+    plt.legend()
+    plt.grid(True)
+
+    # Show the plot
+    buf = io.BytesIO()
+    plt.savefig(buf, format='png')
+    buf.seek(0)
+    
+    # Encode the image in base64
+    string = base64.b64encode(buf.read())
+    uri = urllib.parse.quote(string)
+    
+    
  
-    return HttpResponse('predictions ')
+    return render(request, 'about.html', {'plot_data': uri})
+    '''
+    
+    return HttpResponse('predictions page ')

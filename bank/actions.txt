@@ -35,7 +35,21 @@ objects =  your_model.objects.all()  and then filter and iterate  like object.na
 >>> dr1.save()    in django   the   objects in model which are rows act like objects and the fields act like values
 25 so   you can get info via post with object and  just objecit.fileld = data .  object.save() thats it. 
 
-
+26 i copied the data preproccess and prediciton functions for the close prices of stocks and implmented .  imported those 
+functions to the views  and displayed with json response 
+27 this is how i passed the plot into the picture: 
+  buf = io.BytesIO()
+    plt.savefig(buf, format='png')
+    buf.seek(0)
+    
+    # Encode the image in base64
+    string = base64.b64encode(buf.read())
+    uri = urllib.parse.quote(string)
+    
+    
+ 
+    return render(request, 'about.html', {'plot_data': uri})    
+in template : <img src="data:image/png;base64,{{ plot_data }}" alt="My Plot">
 
 \\\\\
 
