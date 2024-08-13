@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 # data = yf.download("AAPL", start="2020-01-01", end="2021-01-01")
 def forecast(tickle , start , end , window ,  days_to_forecast):
     data = yf.download(tickle, start=start, end=end)
-    predictions , y_test =  lstm_model(data['Close'].values , window ,  days_to_forecast)
+    predictions , y_test =  lstm_model(data['Close'].values , window ,  days_to_forecast)# model.forecast()
  
     return predictions ,  y_test
      

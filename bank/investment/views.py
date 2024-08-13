@@ -42,13 +42,23 @@ def see_investors(request):
 
 
 def see_predictions(request):
-    '''
-     predictions  , y_test= forecast("AAPL", "2020-01-01", "2021-01-01", 40, 3)
+    tickle = request.POST['tickle']
+    start  = request.POST['start']
+    end  =    request.POST['end']
+    window  =    request.POST['window']
+    days_to_forecast  =   request.POST['days_to_forecast']
+    try:
+            window = int(request.POST.get('window'))
+            days_to_forecast = int(request.POST.get('days_to_forecast'))
+    except ValueError:
+            # Handle the error if the conversion fails
+            return HttpResponse("Invalid input: window and days_to_forecast must be integers.")
+    predictions  , y_test= forecast(tickle, start, end, window, days_to_forecast)
     
     
     
     
-    plt.figure(figsize=(7, 5))  # Adjust figure size as needed
+    plt.figure(figsize=(4, 3))  # Adjust figure size as needed
     plt.plot( y_test, label='Actual Data')
     plt.plot(predictions, label='LSTM Predicted Data ')
 
@@ -70,6 +80,6 @@ def see_predictions(request):
     
  
     return render(request, 'about.html', {'plot_data': uri})
-    '''
+ 
     
-    return HttpResponse('predictions page ')
+    

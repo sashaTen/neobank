@@ -1,0 +1,39 @@
+-- the data has to be passed as the input to  the  function forecast
+== home html sends   form resukt to result and view gets the post  from the result page 
+-- i  have to save thte  model so  i dont retrain the model  every time  i  visit page
+== you  cant  really save the  model   because the  model learned the  features  of the 
+specific  stocks  . thisis the nature of the time seties models 
+
+-- 
+
+
+
+  '''
+    predictions  , y_test= forecast(tickle, start, end, window, days_to_forecast)
+    
+    
+    
+    
+    plt.figure(figsize=(7, 5))  # Adjust figure size as needed
+    plt.plot( y_test, label='Actual Data')
+    plt.plot(predictions, label='LSTM Predicted Data ')
+
+    plt.xlabel('Time Step')
+    plt.ylabel('Price')
+    plt.title('Actual vs. Predicted Stock Prices   ' )
+    plt.legend()
+    plt.grid(True)
+
+    # Show the plot
+    buf = io.BytesIO()
+    plt.savefig(buf, format='png')
+    buf.seek(0)
+    
+    # Encode the image in base64
+    string = base64.b64encode(buf.read())
+    uri = urllib.parse.quote(string)
+    
+    
+ 
+    return render(request, 'about.html', {'plot_data': uri})
+    '''

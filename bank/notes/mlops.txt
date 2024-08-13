@@ -34,3 +34,7 @@ Mlflow
 Grafana 
 Maybe ZenMl
 Mloops   is   way too big   so   that is why  just  build project above and then improve on  top of it using  the books  and try to see the big  picture and use proper tools because tools are just tools .   And tools  must be used properly. 
+
+
+
+https://mlops-for-all.github.io/en/    this is   very good  site  for learning mlpops 
