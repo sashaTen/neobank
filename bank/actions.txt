@@ -50,7 +50,9 @@ functions to the views  and displayed with json response
  
     return render(request, 'about.html', {'plot_data': uri})    
 in template : <img src="data:image/png;base64,{{ plot_data }}" alt="My Plot">
-
+28 now in above page  you  can see the visualization of the model .   forecast functions returned predictions and y_test 
+and then i  apllied visualizations and imported into about page
+29 next step is make model to get time periods , then preproccess them and visualize predictions on top of real data. 
 \\\\\
 
 Project plan
