@@ -53,6 +53,15 @@ in template : <img src="data:image/png;base64,{{ plot_data }}" alt="My Plot">
 28 now in above page  you  can see the visualization of the model .   forecast functions returned predictions and y_test 
 and then i  apllied visualizations and imported into about page
 29 next step is make model to get time periods , then preproccess them and visualize predictions on top of real data. 
+30 <form action="{% url 'predictions' %}" method="post">,  i created such  form in welcome which calls 'predictions' url and sends data from  form 
+to the predictions url   which evokes the see_prefictions function.  the functions gets the post data and input  it  in the forecast model 
+which sends   data and user   to  the about page 
+
+
+
+
+
+
 \\\\\
 
 Project plan
