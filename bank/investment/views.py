@@ -1,12 +1,11 @@
 from django.shortcuts import render , redirect
-from django.http import HttpResponse
+from django.http import HttpResponse ,JsonResponse
 from .forms   import  InvestorForm
 from .models import Investor
+from .get_data import forecast
 # Create your views here.
-def welcome(request , company_id):
-    top_stocks = ['apple' ,  'microsoft' ,  'google']
-     
-    return render(request, 'welcome.html', {'company_name': top_stocks[company_id] })
+def welcome(request ):
+  return render(request, 'welcome.html')
 
 
 def create_user(request): 
@@ -35,3 +34,20 @@ def see_investors(request):
        res += elt.name+"<br>"
     
      return HttpResponse(res)
+
+
+
+
+def see_predictions(request):
+    '''
+    predictions = forecast("AAPL", "2020-01-01", "2021-01-01", 40, 3)
+    
+    # Convert NumPy array to a list
+    predictions_list = predictions.tolist()
+    
+    # Return as JSON response
+    return JsonResponse({'predictions': predictions_list})
+    
+    '''
+ 
+    return HttpResponse('predictions ')
