@@ -42,6 +42,7 @@ def see_investors(request):
 
 
 def see_predictions(request):
+    
     tickle = request.POST['tickle']
     start  = request.POST['start']
     end  =    request.POST['end']
@@ -82,4 +83,5 @@ def see_predictions(request):
     return render(request, 'about.html', {'plot_data': uri})
  
     
+   # return HttpResponse('predictions page ')
     
