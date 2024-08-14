@@ -38,3 +38,18 @@ Mloops   is   way too big   so   that is why  just  build project above and then
 
 
 https://mlops-for-all.github.io/en/    this is   very good  site  for learning mlpops 
+
+
+
+1 register  on the   databricks community edition site  
+and start there new exprement
+2 !pip install mlflow
+!databricks configure --host https://community.cloud.databricks.com/
+run this and register with  email  and the password  
+3 refresh  page 
+import mlflow
+mlflow.set_tracking_uri("")
+mlflow.set_experiment("your  experemnt name") copied from the databricks site
+4 then train and test data  
+5 start , load   , eval  with   model paramters  
+6 end run 
