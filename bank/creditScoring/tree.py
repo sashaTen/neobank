@@ -8,10 +8,13 @@ from sklearn.metrics import classification_report
 import pickle
 
 
+import mlflow
+mlflow.set_tracking_uri("sqlite:///mlflow.db")
+mlflow.set_experiment("spyder-experiment")
 
 
 
-
+'''
 path   =  'https://raw.githubusercontent.com/Usangajonah/Loan-Prediction-/main/loan_data.csv'
 loans = pd.read_csv(path)
 print(loans.info())
@@ -31,3 +34,5 @@ print(classification_report(y_test,predictions))
 pickle.dump(dtree,open("tree_model_credit_score.sav", "wb"))
 
 print(X_train.iloc[0])
+'''
+

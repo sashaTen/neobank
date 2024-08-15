@@ -57,7 +57,12 @@ and then i  apllied visualizations and imported into about page
 to the predictions url   which evokes the see_prefictions function.  the functions gets the post data and input  it  in the forecast model 
 which sends   data and user   to  the about page 
 
-
+31  what  i  did    with   mlops : 
+a . install mlflow
+b.  mlflow start and mlflow log params and metrics and end expreremt 
+c. created urls for  view  fucntion 
+d . run python -m mlflow ui   in   same   direcotry  of the   python  manage.py runserver 
+ 
 
 
 

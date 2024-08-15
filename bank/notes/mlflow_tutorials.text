@@ -1,0 +1,51 @@
+mlflow  is  for  each  stage  but  i  
+only saw the  experrementation with   not  clear  idea  yet 
+
+so the components of  mlflow are : 
+a.  ui 
+b.  Evaluation
+c.  mlops 
+d.  tracking
+f.  deployment
+j. regisrty
+
+below  is the guide simple   intro so  try to replicate  it   
+https://www.mlflow.org/docs/latest/getting-started/intro-quickstart/index.html
+
+GenAI and MLflow
+is  also   next    big  step  to  go .
+
+
+so   mlflow  is for :  develop deploy  ,  manage 
+...tracking  gives ui and api  for code versions , params , metrics ,  articfacts , it has all details that we  need  in 
+order to track all details 
+... model registry  : model  evolution and full  cycle  managememt  lineage, versioning, aliasing, tagging, and annotations.
+
+...llms management
+
+why   use   it   ???????
+* exprerement  track 
+* reproduction   which  include  info  of  env  and more for scalable and collaborative work
+* deploymenet consistency : too many tools  and no one standart way  so mlflloow helps with consistency
+* model managememt : in  productions the number of expremtns  is   very  big  so good  management
+* library  agnostic 
+
+so  basically   : 
+1 trace evolutions of model  with tracking sevrer 
+2 consistency
+3 compatable  with many  languages  and tools 
+
+
+how to  use ?????
+1 with   mlflow ui   you  track  and choose  the  best 
+2  registred  models can  be monitored  with mlflow ui 
+
+
+
+
+below  is    very   good   source  to   learn  from   : 
+https://www.run.ai/guides/machine-learning-operations
+
+this  is  like   basics  of   mlflow   
+so  after   learninig   them   go and  learn   another tool  for   mlops: 
+https://www.run.ai/guides/machine-learning-operations/mlflow

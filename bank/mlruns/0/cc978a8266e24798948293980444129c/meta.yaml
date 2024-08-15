@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Desktop/neobank/bank/mlruns/0/cc978a8266e24798948293980444129c/artifacts
+end_time: 1723754797714
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cc978a8266e24798948293980444129c
+run_name: amusing-donkey-153
+run_uuid: cc978a8266e24798948293980444129c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723754791234
+status: 3
+tags: []
+user_id: HP

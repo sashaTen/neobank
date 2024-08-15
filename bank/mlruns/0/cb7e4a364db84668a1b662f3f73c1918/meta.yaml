@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Desktop/neobank/bank/mlruns/0/cb7e4a364db84668a1b662f3f73c1918/artifacts
+end_time: 1723754055242
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cb7e4a364db84668a1b662f3f73c1918
+run_name: upbeat-snake-776
+run_uuid: cb7e4a364db84668a1b662f3f73c1918
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723754040353
+status: 3
+tags: []
+user_id: HP

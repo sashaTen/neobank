@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Desktop/neobank/bank/mlruns/0/f20b927e0276492d9b0611d36e5c5fad/artifacts
+end_time: 1723754221904
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f20b927e0276492d9b0611d36e5c5fad
+run_name: silent-moth-228
+run_uuid: f20b927e0276492d9b0611d36e5c5fad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723754212772
+status: 3
+tags: []
+user_id: HP

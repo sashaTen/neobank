@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Desktop/neobank/bank/mlruns/0/bff7785fbbca481f8effb9fbe727597e/artifacts
+end_time: 1723755418597
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bff7785fbbca481f8effb9fbe727597e
+run_name: clean-wasp-598
+run_uuid: bff7785fbbca481f8effb9fbe727597e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723755407592
+status: 3
+tags: []
+user_id: HP
