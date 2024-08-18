@@ -1,9 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+import pandas as pd
 from .tree_test import predict
-
-
-
 import mlflow
 import mlflow.sklearn
 from sklearn.datasets import load_iris
@@ -11,7 +9,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from django.http import JsonResponse
-
+from  .mlflow_tutorial import sentiment_analysis
 
 
 def hello(request):
@@ -78,3 +76,19 @@ def train_model(request):
 
         # Return a JSON response with the accuracy
         return JsonResponse({"accuracy": acc})
+
+
+
+
+
+
+def  sentiment(request):
+    df = pd.read_csv('https://raw.githubusercontent.com/surge-ai/stock-sentiment/main/sentiment.csv')
+
+      # Extract X and y
+    X = df['Tweet Text']
+    y = df['Sentiment']
+    accuracy =  sentiment_analysis(X,y)
+    return HttpResponse(accuracy)
+
+    

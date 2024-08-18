@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Desktop/neobank/bank/mlruns/0/bce7627bb09e4c96a97400ea17030a31/artifacts
+end_time: 1724012335563
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bce7627bb09e4c96a97400ea17030a31
+run_name: clean-bat-427
+run_uuid: bce7627bb09e4c96a97400ea17030a31
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724012322890
+status: 3
+tags: []
+user_id: HP

@@ -49,3 +49,10 @@ https://www.run.ai/guides/machine-learning-operations
 this  is  like   basics  of   mlflow   
 so  after   learninig   them   go and  learn   another tool  for   mlops: 
 https://www.run.ai/guides/machine-learning-operations/mlflow
+
+////
+
+pip   vs  conda :  conda  is  env  for  many  other   non  python  libraoires   
+like  react  for  example  and the   pip  is   for   pure python  packages 
+...
+

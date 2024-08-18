@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Desktop/neobank/bank/mlruns/0/dab0317e5cf1433f8d3ac8783fb3ea73/artifacts
+end_time: 1723758744795
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: dab0317e5cf1433f8d3ac8783fb3ea73
+run_name: nimble-stork-955
+run_uuid: dab0317e5cf1433f8d3ac8783fb3ea73
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723758732571
+status: 3
+tags: []
+user_id: HP
