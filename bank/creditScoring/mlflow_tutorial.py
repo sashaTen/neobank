@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
 import nltk
-
+import re 
 # Download the 'punkt' tokenizer model
 nltk.download('punkt_tab')
 nltk.download('punkt')        # Tokenizer models
@@ -25,53 +25,52 @@ from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-def preprocess_and_vectorize(X):
-    # Helper function to preprocess individual texts
-    def preprocess_text(text):
-        # Convert text to lowercase
-        text = text.lower()
 
-        # Remove punctuation
-        text = text.translate(str.maketrans('', '', string.punctuation))
+# Function to preprocess the text
+def preprocess_text(text):
+    # Convert text to lowercase
+    text = text.lower()
 
-        # Tokenize text
-        tokens = word_tokenize(text)
+    # Remove punctuation
+    text = text.translate(str.maketrans('', '', string.punctuation))
 
-        # Remove stopwords
-        stop_words = set(stopwords.words('english'))
-        tokens = [word for word in tokens if word not in stop_words]
+    # Tokenize text
+    tokens = word_tokenize(text)
 
-        # Remove numbers
-        tokens = [word for word in tokens if not word.isdigit()]
+    # Remove stopwords
+    stop_words = set(stopwords.words('english'))
+    tokens = [word for word in tokens if word not in stop_words]
 
-        # Lemmatize tokens
-        lemmatizer = WordNetLemmatizer()
-        tokens = [lemmatizer.lemmatize(word) for word in tokens]
+    # Remove numbers
+    tokens = [word for word in tokens if not word.isdigit()]
 
-        # Join tokens back into a single string
-        processed_text = ' '.join(tokens)
-        return processed_text
+    # Lemmatize tokens
+    lemmatizer = WordNetLemmatizer()
+    tokens = [lemmatizer.lemmatize(word) for word in tokens]
 
-    # Apply preprocessing to the entire dataset
+    # Join tokens back into a single string
+    processed_text = ' '.join(tokens)
+    return processed_text
+
+# Function to vectorize the text using a pre-fitted TF-IDF vectorizer
+def vectorize_text(texts, tfidf_vectorizer):
+    # Preprocess the text
+    texts_preprocessed = [preprocess_text(text) for text in texts]
+    
+    # Vectorize the preprocessed text using the pre-fitted vectorizer
+    X_tfidf = tfidf_vectorizer.transform(texts_preprocessed)
+    
+    return X_tfidf
+def sentiment_analysis(X, y):
+    # Preprocess and vectorize the text data
     X_preprocessed = [preprocess_text(text) for text in X]
-
-    # Vectorize the preprocessed text using TF-IDF
+    
+    # Initialize and fit the TF-IDF vectorizer
     tfidf_vectorizer = TfidfVectorizer(max_features=3000, stop_words='english')
     X_tfidf = tfidf_vectorizer.fit_transform(X_preprocessed)
 
-    return X_tfidf
-
-# Apply the function to preprocess and vectorize the text data
-
-
-
-
-
-def sentiment_analysis(X , y):
-    X_processed = preprocess_and_vectorize(X)
-
-# Split the data into training and test sets
-    X_train, X_test, y_train, y_test = train_test_split(X_processed, y, test_size=0.2, random_state=42)
+    # Split the data into training and test sets
+    X_train, X_test, y_train, y_test = train_test_split(X_tfidf, y, test_size=0.2, random_state=42)
 
     # Train a Random Forest classifier
     rf_classifier = RandomForestClassifier(n_estimators=100, random_state=42)
@@ -82,9 +81,16 @@ def sentiment_analysis(X , y):
 
     # Evaluate the model
     accuracy = accuracy_score(y_test, y_pred)
-    return accuracy  
-
-
-
-
-
+    print(f'Accuracy: {accuracy}')
+    
+    # Return the trained model and vectorizer for future use
+    return rf_classifier, tfidf_vectorizer
+def prepare_data_for_inference(new_texts, rf_classifier, tfidf_vectorizer):
+    # Preprocess and vectorize the new text data using the trained vectorizer
+    X_new_tfidf = vectorize_text(new_texts, tfidf_vectorizer)
+    
+    # Predict the sentiment of the new data
+    predictions = rf_classifier.predict(X_new_tfidf)
+    
+    return predictions
+# Assuming you have your training data X and y

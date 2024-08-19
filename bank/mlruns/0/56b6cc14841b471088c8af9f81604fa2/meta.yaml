@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Desktop/neobank/bank/mlruns/0/56b6cc14841b471088c8af9f81604fa2/artifacts
+end_time: 1724046562598
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 56b6cc14841b471088c8af9f81604fa2
+run_name: bittersweet-calf-409
+run_uuid: 56b6cc14841b471088c8af9f81604fa2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724046546202
+status: 3
+tags: []
+user_id: HP

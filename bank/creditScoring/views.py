@@ -9,7 +9,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from django.http import JsonResponse
-from  .mlflow_tutorial import sentiment_analysis
+from  .mlflow_tutorial import sentiment_analysis,prepare_data_for_inference
 
 
 def hello(request):
@@ -84,11 +84,20 @@ def train_model(request):
 
 def  sentiment(request):
     df = pd.read_csv('https://raw.githubusercontent.com/surge-ai/stock-sentiment/main/sentiment.csv')
-
+    
+    sentiment = request.POST['sentiment']
+    
+    
       # Extract X and y
     X = df['Tweet Text']
     y = df['Sentiment']
-    accuracy =  sentiment_analysis(X,y)
-    return HttpResponse(accuracy)
+    rf_classifier, tfidf_vectorizer = sentiment_analysis(X, y)
+# Now, prepare new text data for inference
+    new_texts = [sentiment]
+    # Predict the sentiment of the new texts
+    predictions = prepare_data_for_inference(new_texts, rf_classifier, tfidf_vectorizer)
+    return HttpResponse( predictions )
 
     
+
+
