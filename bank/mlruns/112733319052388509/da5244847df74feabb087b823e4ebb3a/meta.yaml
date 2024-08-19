@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Desktop/neobank/bank/mlruns/112733319052388509/da5244847df74feabb087b823e4ebb3a/artifacts
+end_time: 1724097604045
+entry_point_name: ''
+experiment_id: '112733319052388509'
+lifecycle_stage: active
+run_id: da5244847df74feabb087b823e4ebb3a
+run_name: intelligent-pig-800
+run_uuid: da5244847df74feabb087b823e4ebb3a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724097583712
+status: 3
+tags: []
+user_id: HP

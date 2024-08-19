@@ -1,3 +1,6 @@
+full  mlops  project
+https://www.datacamp.com/tutorial/tutorial-machine-learning-pipelines-mlops-deployment
+..........
 First of all you  dont have to learn  every single topic in mlops. Only basics.
 
 Theory  behind : 

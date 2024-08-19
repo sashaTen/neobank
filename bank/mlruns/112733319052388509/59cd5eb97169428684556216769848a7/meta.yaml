@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Desktop/neobank/bank/mlruns/112733319052388509/59cd5eb97169428684556216769848a7/artifacts
+end_time: 1724096027036
+entry_point_name: ''
+experiment_id: '112733319052388509'
+lifecycle_stage: active
+run_id: 59cd5eb97169428684556216769848a7
+run_name: rogue-hen-968
+run_uuid: 59cd5eb97169428684556216769848a7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724096017736
+status: 3
+tags: []
+user_id: HP

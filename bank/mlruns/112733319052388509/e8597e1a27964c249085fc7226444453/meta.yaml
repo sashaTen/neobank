@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Desktop/neobank/bank/mlruns/112733319052388509/e8597e1a27964c249085fc7226444453/artifacts
+end_time: 1724097296191
+entry_point_name: ''
+experiment_id: '112733319052388509'
+lifecycle_stage: active
+run_id: e8597e1a27964c249085fc7226444453
+run_name: gifted-croc-272
+run_uuid: e8597e1a27964c249085fc7226444453
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724097277282
+status: 3
+tags: []
+user_id: HP
