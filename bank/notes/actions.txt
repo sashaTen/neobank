@@ -63,7 +63,29 @@ b.  mlflow start and mlflow log params and metrics and end expreremt
 c. created urls for  view  fucntion 
 d . run python -m mlflow ui   in   same   direcotry  of the   python  manage.py runserver 
  
+32 sentiment analysis with  mlflow : 
+a . input  form  which sends the post to  sentiment  url 
+b . created  view function with  simplke   htttp response 
+c .   url   that  invokes the view function 
+d .   view  functon  gets  the  post  data 
+e .  mlflloow-tutorial.py file has 3 functions 
+    .preporcess text 
+    .trains ml model and  returns model and vectorizer 
+    .vectorizer function from the model for data process for inference
+f . view  function calls the models and vectorizer and inputsthe post text
+j . implement mlflow  for  tracking :
+    mlflow.set_experiment('Baseline Model')
+    with mlflow.start_run(): 
+         mlflow.log_metric('accuracy', accuracy)
+         mlflow.sklearn.log_model(rf_classifier, 'random forest model') and etc 
 
+k . regsitred the model  for   versioning
+l . created logistic regresiioin model with mlflow.set_experiment('Baseline Model')
+so  i  compared the  two  models 
+     
+
+  
+    
 
 
 
