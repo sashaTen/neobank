@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Desktop/neobank/bank/mlruns/112733319052388509/a0cb19bff7a24dd59b1a67951a4f58fb/artifacts
+end_time: 1724276115651
+entry_point_name: ''
+experiment_id: '112733319052388509'
+lifecycle_stage: active
+run_id: a0cb19bff7a24dd59b1a67951a4f58fb
+run_name: worried-dog-829
+run_uuid: a0cb19bff7a24dd59b1a67951a4f58fb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724276089699
+status: 3
+tags: []
+user_id: HP
