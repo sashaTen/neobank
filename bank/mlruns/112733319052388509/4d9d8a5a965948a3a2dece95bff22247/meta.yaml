@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Desktop/neobank/bank/mlruns/112733319052388509/4d9d8a5a965948a3a2dece95bff22247/artifacts
+end_time: 1724191029084
+entry_point_name: ''
+experiment_id: '112733319052388509'
+lifecycle_stage: active
+run_id: 4d9d8a5a965948a3a2dece95bff22247
+run_name: amusing-zebra-335
+run_uuid: 4d9d8a5a965948a3a2dece95bff22247
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724191005336
+status: 3
+tags: []
+user_id: HP

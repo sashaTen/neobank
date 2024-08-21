@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Desktop/neobank/bank/mlruns/112733319052388509/2775f48a0e3b4c7daa8a8d34eccd82a3/artifacts
+end_time: 1724206063134
+entry_point_name: ''
+experiment_id: '112733319052388509'
+lifecycle_stage: active
+run_id: 2775f48a0e3b4c7daa8a8d34eccd82a3
+run_name: whimsical-snake-26
+run_uuid: 2775f48a0e3b4c7daa8a8d34eccd82a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724206041745
+status: 3
+tags: []
+user_id: HP

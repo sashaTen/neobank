@@ -86,20 +86,10 @@ so  i  compared the  two  models
 
   
     
-
-
-
-\\\\\
-
-Project plan
-1... finish tutorials point django 
-2... stock prediction model time series
-You enter stock and desired time and get predictions of desired period.  and metrics on test
-3... opensource mlops 
-4... SE for datascience book.
-6... master API book for django chapter.
-7... keep researching and improving by 
-Предсказания именно определенной индустрий.  Например альтернативы энергии сектор и лучшие рекомендации акции.
-Ты не можешь охватить все но фокус
-Также важно знать акции самому. 
-Анализировать и также интересоваться и также знать систему. И другие сток конкурентов по аналитики
+.....................next   steps   : 
+,повторение   действий которые  уже  выполнил  
+,млопс текст файл зайди   и начни просто изучать  инструментыв по  очереди 
+например  гит  и гитхаю  ждя  млопс 
+потом версии данных  и так далее , 
+, определись с целями проэкта и так  далее 
+, окружи себя контенотом для млопс и мл 

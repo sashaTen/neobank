@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Desktop/neobank/bank/mlruns/112733319052388509/fff0034e7c8a46368f85d70f5b680faa/artifacts
+end_time: 1724195013845
+entry_point_name: ''
+experiment_id: '112733319052388509'
+lifecycle_stage: active
+run_id: fff0034e7c8a46368f85d70f5b680faa
+run_name: luminous-robin-967
+run_uuid: fff0034e7c8a46368f85d70f5b680faa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724194998566
+status: 3
+tags: []
+user_id: HP

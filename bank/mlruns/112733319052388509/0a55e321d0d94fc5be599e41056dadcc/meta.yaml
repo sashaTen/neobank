@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Desktop/neobank/bank/mlruns/112733319052388509/0a55e321d0d94fc5be599e41056dadcc/artifacts
+end_time: 1724194350135
+entry_point_name: ''
+experiment_id: '112733319052388509'
+lifecycle_stage: active
+run_id: 0a55e321d0d94fc5be599e41056dadcc
+run_name: monumental-bat-144
+run_uuid: 0a55e321d0d94fc5be599e41056dadcc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724194339137
+status: 3
+tags: []
+user_id: HP
