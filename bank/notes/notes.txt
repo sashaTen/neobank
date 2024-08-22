@@ -33,3 +33,6 @@ compare it to   yahoo  finance   and the n   maybe   you   ll have  ideas . also
 
 ...https://www.scaler.com/blog/mlops-roadmap/
 ...https://www.qwak.com/post/mlops-pipeline-with-open-source-tools
+
+
+

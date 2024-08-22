@@ -60,3 +60,8 @@ Model Serving: FastAPI
 Monitoring: Prometheus and Grafana
 
 
+.....DOCKER   : 
+*it is way to package  the  software to run  on   any  software
+* 3 musts :   dockerfile   /  image /  container . .
+
+

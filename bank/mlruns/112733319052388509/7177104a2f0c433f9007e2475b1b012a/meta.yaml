@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Desktop/neobank/bank/mlruns/112733319052388509/7177104a2f0c433f9007e2475b1b012a/artifacts
+end_time: 1724362209661
+entry_point_name: ''
+experiment_id: '112733319052388509'
+lifecycle_stage: active
+run_id: 7177104a2f0c433f9007e2475b1b012a
+run_name: unique-quail-464
+run_uuid: 7177104a2f0c433f9007e2475b1b012a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724362183619
+status: 3
+tags: []
+user_id: HP
