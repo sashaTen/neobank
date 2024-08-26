@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Desktop/neobank/bank/mlruns/112733319052388509/645e5a64fcae4b5c9044c7a6cf70fb8e/artifacts
+end_time: 1724653919166
+entry_point_name: ''
+experiment_id: '112733319052388509'
+lifecycle_stage: active
+run_id: 645e5a64fcae4b5c9044c7a6cf70fb8e
+run_name: handsome-skink-949
+run_uuid: 645e5a64fcae4b5c9044c7a6cf70fb8e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724653883163
+status: 3
+tags: []
+user_id: HP
