@@ -1,39 +1,65 @@
--- the data has to be passed as the input to  the  function forecast
-== home html sends   form resukt to result and view gets the post  from the result page 
--- i  have to save thte  model so  i dont retrain the model  every time  i  visit page
-== you  cant  really save the  model   because the  model learned the  features  of the 
-specific  stocks  . thisis the nature of the time seties models 
 
--- 
+.i still  dont  know the mlflow and docker  well   
+.i need  to   recall   first  the  actions 
+.i should  start several  projects for  example  : 
+main   project   is for  learning  the  djnago  
+another  one is   for  learninig time seriess mlops
+another  one  is   for  sentiment analysis  
+another one  is  for learning tools  like  docker  and github actions 
+.the  good  starategy  is  to learn  something  in the   isolation  
+and then  appply   it   to  main   project 
+for  example  you  learned  the topic  from  mlflow  and about docker 
+exercise  first  in  isolation  and then   apply  to  the main 
+project.   
+.learn the minimum  of   mlops  and then  apply to  your  project  
+and then   apply   SE  book and  rest  of   books 
 
 
 
-  '''
-    predictions  , y_test= forecast(tickle, start, end, window, days_to_forecast)
-    
-    
-    
-    
-    plt.figure(figsize=(7, 5))  # Adjust figure size as needed
-    plt.plot( y_test, label='Actual Data')
-    plt.plot(predictions, label='LSTM Predicted Data ')
+ ....
+cycle   is   :   
+after model  eval : 
+deploy 
+monitor and manitain 
+retrain  and update with   zenml ci / cd 
+documentation and colab 
 
-    plt.xlabel('Time Step')
-    plt.ylabel('Price')
-    plt.title('Actual vs. Predicted Stock Prices   ' )
-    plt.legend()
-    plt.grid(True)
+.....
+data  management
+model train
+model versioning
+deployment 
+model  monitor and  manage
+automated and orchestration
+collaboration and  governance
 
-    # Show the plot
-    buf = io.BytesIO()
-    plt.savefig(buf, format='png')
-    buf.seek(0)
-    
-    # Encode the image in base64
-    string = base64.b64encode(buf.read())
-    uri = urllib.parse.quote(string)
-    
-    
- 
-    return render(request, 'about.html', {'plot_data': uri})
-    '''
+above aspects  of   ml   have to  be  worked on  
+.....
+---Data Management and Versioning: 
+ Tools like DVC (Data Version Control) and LakeFS help in data management and versioning, thereby allowing a project in machine learning to be reproducible and traceable.
+---Experiment Tracking: 
+MLflow platforms and Weights & Biases have inherent experiment tracking frameworks that enable tracking experiments, recording parameters and results, and allowing data scientists to compare and manage their experiments.
+---Model Development Frameworks:
+ A few of the popular libraries and frameworks supporting extensive support for various algorithms for the development of models in machine learning include TensorFlow, PyTorch, and Scikit-learn.
+---Model versioning and registry: 
+The versioning of models, which will contain the respective metadata and make it easy to track the right models, is handled by MLflow Model Registry and DVC.
+---Workflow Orchestration and Automation: Apache Airflow and Kubeflow Pipelines can automate the ML workflow, from data preprocessing to model training and deployment. They, therefore, promise consistency and efficiency in the processes.
+---Model Deployment: 
+This is the process of deploying the developed models into the real world on a production scale using TensorFlow Serving, TorchServe, and Kubernetes such that they handle real-world workloads efficiently.
+---Model Monitoring and Operations: 
+This process involves monitoring models' performance and operational health using Prometheus, Grafana, and AI to alert respective teams in case of deviations from defined normalcy or thresholds.
+---Version Control and Collaboration: Git and GitHub tools assist in version control and collaboration. They help control versions of the files and collaborate with a team of software developers on a project.
+
+
+maybe    time  series  of  stocks   with   django  and lstm  and used   mlflow  and   zenml  , 
+dockerized  and deployed to   ngnix and monitor 
+with   grafana  and ci /  cd  is   done with github  actions .
+
+1  above  topics and  tools .   learn  each  individually  and 
+then   apply to  single   project  main 
+2  use  zenml  for   orchestrations  / docker  and ngnix  for  deployment 
+3  just  keep  building   ,  dont  seek   perfections   and just  make minimum and then
+deepen knowledge with  books  and opensource
+
+
+

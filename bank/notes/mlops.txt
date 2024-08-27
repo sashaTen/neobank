@@ -5,6 +5,7 @@ First of all you  dont have to learn  every single topic in mlops. Only basics.
 
 
 Basically   the   big   picture  of  project  looks  like   : 
+
 Model training 
 Deployment of api of  django 
 Monitoring and logging 
