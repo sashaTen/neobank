@@ -65,3 +65,44 @@ Monitoring: Prometheus and Grafana
 * 3 musts :   dockerfile   /  image /  container . .
 
 
+python -m venv myenv
+myenv/Scripts/activate
+pip  installations 
+pip freeze > requirements.txt
+Dockerfile : 
+FROM python:3.11
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV  PYTHONUNBUFFERED=1
+WORKDIR  / app
+
+COPY  requirements.txt .
+RUN pip  install --upgrade pip 
+RUN pip  install -r requirements.txt
+COPY . .
+EXPOSE 8000
+
+CMD ["python" ,  "manage.py"  ,  "runserver" , "0.0.0.0:8000"]
+
+.dockerignore : 
+.env
+myenv/
+Dockerfile
+
+
+in bash :  
+docker build -t my-docker-img
+docker run -d --name my-docker-container -p 8001:8000 my-docker-img
+
+then   you can   delete  your  container  and create using  compose file : 
+docker-compose.yml:
+name  :  my-docker-project
+services :
+    app:
+      image: my-docker-img 
+      container_name: my-docker-container 
+      ports : 
+         - "8001:8000"
+         
+
+docker compose up -d 
+then  stop  it   if  needed 

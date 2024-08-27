@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Desktop/neobank/bank/mlruns/112733319052388509/836b95b9cccb454591ee0c080de0536c/artifacts
+end_time: 1724657949019
+entry_point_name: ''
+experiment_id: '112733319052388509'
+lifecycle_stage: active
+run_id: 836b95b9cccb454591ee0c080de0536c
+run_name: gentle-sheep-96
+run_uuid: 836b95b9cccb454591ee0c080de0536c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724657921732
+status: 3
+tags: []
+user_id: HP
