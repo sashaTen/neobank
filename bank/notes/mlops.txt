@@ -114,3 +114,27 @@ then  stop  it   if  needed
 zenml   is  pretty  easy    just donwnload   with   venv 
 then  build  with   steps and  pipeline
 in bash zenml up   --blocking  and   look at  gui api  the process of   pipeline.    
+
+
+
+
+
+
+start   reading the papers  about the  sentiment 
+and  time  series .. 
+..
+
+
+
+
+1  MLflow can be used for logging parameters, output files, model management, and servering. 
+2  pipeline   with   zen ml  
+3  CI/CD for Machine Learning  with  github  actions 
+4  docker   + render / railway   for deployment 
+5  evidently ai  + grafana   for  monitoring  
+
+use  this  project : but   add here the  zen ml and CI/CD 
+https://medium.com/@chamathka3deemanthi/implement-end-to-end-project-with-mlflow-evidently-ai-and-grafana-83175ea75c89    this  is  very  good  project   
+
+this is for   reference   : 
+https://www.kdnuggets.com/7-steps-to-mastering-mlops

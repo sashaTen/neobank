@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/Desktop/neobank/bank/mlruns/112733319052388509/6637afb8ba6f4cd3a82199b62e386358/artifacts
+end_time: 1724838646067
+entry_point_name: ''
+experiment_id: '112733319052388509'
+lifecycle_stage: active
+run_id: 6637afb8ba6f4cd3a82199b62e386358
+run_name: merciful-bat-700
+run_uuid: 6637afb8ba6f4cd3a82199b62e386358
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724838617814
+status: 3
+tags: []
+user_id: HP
