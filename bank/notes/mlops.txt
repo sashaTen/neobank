@@ -107,3 +107,10 @@ services :
 
 docker compose up -d 
 then  stop  it   if  needed 
+
+
+
+
+zenml   is  pretty  easy    just donwnload   with   venv 
+then  build  with   steps and  pipeline
+in bash zenml up   --blocking  and   look at  gui api  the process of   pipeline.    
