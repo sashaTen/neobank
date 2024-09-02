@@ -138,3 +138,9 @@ https://medium.com/@chamathka3deemanthi/implement-end-to-end-project-with-mlflow
 
 this is for   reference   : 
 https://www.kdnuggets.com/7-steps-to-mastering-mlops
+
+
+you  dont   have  to   build   super perfect  paper level   model 
+jsut    build   one that solves   problem   for  example 
+ensemble  of   sentiment /   maybe  time  series  S&P500 or  fundamental  data   
+for the    predcition .   maybe   chat   bot  later    .   
